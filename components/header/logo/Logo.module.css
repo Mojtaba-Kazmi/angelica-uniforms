@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logoImage {
+  width: 25%; /* Reduce logo size on small screens */
+  height: auto;
+}
+
+@media (min-width: 1025px) {
+  .logo {
+    margin: 0;
+  }
+  .logoImage {
+    width: 160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logoImage {
+    width: 45%; /* Logo gets smaller on small screens */
+  }
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.angelicauniforms.com.au
+
+# Sitemaps
+Sitemap: https://www.angelicauniforms.com.au/sitemap.xml

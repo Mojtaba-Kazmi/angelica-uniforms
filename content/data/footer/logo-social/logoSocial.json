@@ -1,0 +1,21 @@
+{
+    "logo": {
+      "image": "/assets/logos/angelica-uniforms.svg",
+      "width": "200",
+      "height": "80",
+      "alt": "Angelica Uniforms"
+    },
+    "contact": {
+      "address": "8/1-3 Victoria Dr, Parafield Gardens SA 5107, Australie",
+      "email": "support@angelicauniforms.com.au",
+      "number": "0882810878"
+    },
+    "links": {
+      "legal": "Legal Disclaimers",
+      "findUs": "Find Us"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/angelica.uniforms.94",
+      "instagram": "https://www.instagram.com/angelicauniforms/?hl=en"
+    }
+  }
