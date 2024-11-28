@@ -23,7 +23,7 @@
   font-weight: 900;
   color: #e4087e;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 0; /* Ensure no margin on top */
   margin-bottom: 0.7rem; /* Ensure no margin on top */
 }
@@ -44,7 +44,7 @@
   }
 
   .textContent h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   .textContent h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 
   .textContent p {
@@ -81,7 +81,8 @@
   }
 
   .textContent h2 {
-    font-size: 2rem;
+    font-size: 2.7rem;
+    font-weight: bold;
   }
 
   .textContent p {

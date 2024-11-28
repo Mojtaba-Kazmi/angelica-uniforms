@@ -4,6 +4,7 @@
   line-height: 1.6;
   padding-bottom: 4rem;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin-top: calc(10vh + 2rem); /* Dynamically adjusts margin using viewport height */
 }
 
 /* Wrapper for the content */
@@ -152,52 +153,14 @@
   color: #265e87;
 }
 
-@media (min-width: 768px) {
-  .heroHeader {
-    flex-direction: row; /* Row layout for larger screens */
-    padding: 16rem 1rem 8rem 1rem; /* Adjusted padding for tablets */
+/* Small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .blogPage {
+    margin-top: calc(12vh + 1rem); /* Slightly larger top margin for smaller devices */
   }
 
-  /* Hero background container - controls only the background color */
-  .heroBackground {
-    width: 100%;
-    height: 72vh; /* You can adjust this as needed */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Keeps the background behind the hero content */
-  }
-
-  /* Back button styling */
-  .backButton {
-    top: 9rem;
-    left: 6rem;
-  }
-
-  .blogInfo {
-    text-align: left; /* Left-align text on large screens */
-    margin-top: 0;
-    order: 1; /* Ensure blog info appears below image on larger screens */
-  }
-
-  .thumbnail {
-    flex: 1 1 45%; /* Image width adjusted for large screens */
-    max-width: 700px;
-  }
-
-  .relatedSection h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    padding-top: 7rem;
-  }
-}
-
-@media (max-width: 768px) {
   .wrapper {
     padding-top: 3rem; /* Additional padding for smaller screens */
-    height: auto;
   }
 
   .blogInfo {
@@ -221,8 +184,12 @@
   }
 }
 
-/* Small Tablets (e.g., iPad Mini) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Medium screens (e.g., tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .blogPage {
+    margin-top: calc(8vh + 2rem); /* Adjusted for tablets */
+  }
+
   .heroHeader {
     flex-direction: column; /* Keep the vertical layout for smaller tablets */
     padding: 12rem 1rem 8rem 1rem; /* Adjusted padding */
@@ -255,33 +222,44 @@
   }
 }
 
-/* Large Tablets (e.g., iPad Pro, larger screens) */
-@media (min-width: 912px) and (max-width: 1368px) {
-  .heroHeader {
-    flex-direction: column; /* Horizontal layout for larger tablets */
-    padding: 16rem 1rem 8rem 1rem;
+/* Large screens (e.g., desktops) */
+@media (min-width: 769px) {
+  .blogPage {
+    margin-top: calc(10vh + 3rem); /* Default large screen margin */
   }
 
+  .heroHeader {
+    flex-direction: row; /* Row layout for larger screens */
+    padding: 16rem 1rem 8rem 1rem; /* Adjusted padding for tablets */
+  }
+
+  /* Hero background container - controls only the background color */
   .heroBackground {
-    height: 65vh;
+    width: 100%;
+    height: 72vh; /* You can adjust this as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Keeps the background behind the hero content */
   }
 
   .backButton {
-    top: 10rem;
-    left: 7rem;
+    top: 9rem;
+    left: 6rem;
+  }
+
+  .blogInfo {
+    text-align: left; /* Left-align text on large screens */
+    margin-top: 0;
+    order: 1; /* Ensure blog info appears below image on larger screens */
   }
 
   .thumbnail {
-    flex: 1 1 45%; /* Adjusted for larger tablet screens */
+    flex: 1 1 45%; /* Image width adjusted for large screens */
     max-width: 700px;
   }
 
   .relatedSection h2 {
-    padding-top: 8rem; /* Adjusted heading spacing for larger tablets */
+    padding-top: 7rem;
   }
-
-  .relatedList {
-    gap: 20px; /* Slightly larger gap for larger tablets */
-  }
-
 }
