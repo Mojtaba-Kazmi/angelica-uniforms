@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/scroll-to/ScrollTo";
 import CTAButton from "@/components/cta-button/CTAButton";
 import { Suspense } from "react";
 import Spinner from "@/components/spinner/Spinner";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 
 export const metadata = defaultMetadata;
@@ -44,6 +45,7 @@ export default async function RootLayout({ children }) {
         <Footer />
         <CTAButton />
         <ScrollToTop />
+        <Analytics />
         {/* <Nonce /> */}
       </body>
     </html>
