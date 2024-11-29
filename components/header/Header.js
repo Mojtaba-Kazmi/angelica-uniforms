@@ -62,7 +62,7 @@ const Header = () => {
         {/* Free Quote Button */}
         <Button />
         {/* Burger Menu */}
-        <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />{" "}
+        <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} className={styles.bMenu} />
         {/* Use BurgerMenu */}
       </div>
     </header>
