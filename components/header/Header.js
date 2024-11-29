@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
-import Navbar from "./navbar/Navbar";
+import Navbar from "../navbar/Navbar";
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);

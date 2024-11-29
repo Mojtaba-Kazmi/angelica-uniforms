@@ -1,50 +1,73 @@
+/* General styles for the nav */
+.nav {
+  position: relative;
+}
+
+/* Menu list */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: space-between; /* Space out items evenly */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile menu hidden by default */
+@media (max-width: 1024px) {
+  .list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    background-color: #fff; /* Navy background for mobile menu */
+    transition: left 0.3s ease-in-out;
+    justify-content: flex-start;
+    padding-top: 20px; /* Create space from top */
+    margin-top: 7rem;
+    margin-left: 4rem;
+    border-radius: 8px;
+    min-width: 180px; /* Set minimum width for submenu */
+    max-height: 440px; /* Limit height for submenu */
+    overflow-y: auto; /* Allow scrolling vertically */
+    transition: all 0.3s ease-in-out;
+  }
+
+  .show {
+    left: 0;
+  }
+}
+
 /* Menu item styling */
 .listItem {
   position: relative;
-  width: 80%; /* Full width for mobile menu */
+  width: 100%; /* Full width for mobile menu */
   cursor: pointer;
 }
 
-.listItem a {
-  text-decoration: none; /* Removes underline from the link */
-  color: #000336;
-}
-
-.listItem:nth-child(1) {
-  --index: 0;
-}
-.listItem:nth-child(2) {
-  --index: 1;
-}
-.listItem:nth-child(3) {
-  --index: 2;
-}
-.listItem:nth-child(4) {
-  --index: 3;
-}
-.listItem:nth-child(5) {
-  --index: 4;
-}
-
-/* Add more as needed, or use a looping approach if using a preprocessor */
 .navLink {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
   text-decoration: none;
-  font-size: 18px;
-  color: #000336; /* White text on mobile menu */
+  font-size: 20px;
+  color: #0b1426; /* White text on mobile menu */
   cursor: pointer;
   transition: background-color 0.2s ease;
   width: 100%;
 }
 
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
 /* Arrow for dropdowns */
 .arrow {
   transition: transform 0.3s ease;
-  font-size: 1.5rem;
-  margin-right: 11rem;
 }
 
 .arrowUp {
@@ -65,15 +88,15 @@
 }
 
 .submenuItem {
-  padding-left: 40px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 .submenuLink {
   text-decoration: none;
   font-size: 16px;
-  color: #000336;
+  color: rgb(0, 0, 0);
   transition: color 0.2s ease;
 }
 
@@ -102,18 +125,19 @@
 
 /* Desktop full screen menu */
 @media (min-width: 1025px) {
-  .navLink {
-    font-weight: 600;
-    color: #000336; /* Dark text for desktop */
-    background-color: transparent;
-    text-align: center; /* Center text inside link */
+  .list {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: auto;
+    background-color: transparent; /* Transparent background */
   }
 
-  /* Arrow for dropdowns */
-  .arrow {
-    transition: transform 0.3s ease;
-    font-size: 1.5rem;
-    margin-right: 6rem;
+  .navLink {
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #333; /* Dark text for desktop */
+    background-color: transparent;
   }
 
   /* Hover effect for large screens */
@@ -126,8 +150,8 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
     margin: 0;
-    z-index: 1000;
-    min-width: 150px;
+    z-index: 20;
+    min-width: 200px;
     border-radius: 8px;
     font-weight: 400;
     list-style: none;
@@ -150,20 +174,10 @@
 
   .submenuLink {
     font-size: 16px;
-    color: #000336;
+    color: #333;
   }
 
   .submenuLink:hover {
-    color: #295d8c; /* Dark hover color */
-  }
-}
-
-/* Navbar optimization for landscape */
-@media only screen and (max-height: 540px) and (orientation: landscape) {
-  /* Arrow for dropdowns */
-  .arrow {
-    transition: transform 0.3s ease;
-    font-size: 1.5rem;
-    margin-right: 31rem;
+    color: #0d7ec0; /* Dark hover color */
   }
 }

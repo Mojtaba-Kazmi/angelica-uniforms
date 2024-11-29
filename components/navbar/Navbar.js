@@ -4,13 +4,10 @@ import styles from "./Navbar.module.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Navbar({ isMenuOpen, onCloseMenu }) {
-  const [animationKey, setAnimationKey] = useState(Date.now());
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Set animation key for re-render
-    setAnimationKey(Date.now());
 
     // Check if the window is mobile/tablet size
     const checkMobile = () => {
@@ -64,7 +61,6 @@ export default function Navbar({ isMenuOpen, onCloseMenu }) {
     <nav aria-label="Main navigation" className={styles.nav}>
       <ul
         className={`${styles.list} ${isMenuOpen ? styles.show : ""}`}
-        key={animationKey}
       >
         {menuItems.map((item, index) => (
           <li

@@ -329,7 +329,7 @@ const ContactForm = () => {
               />
             </Box>
 
-            <Box sx={{ width: "100%" }}>
+            <Box sx={{ width: "60%"}}>
               <Box className={styles.captchaBox}>
                 <ReCAPTCHA
                   sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
