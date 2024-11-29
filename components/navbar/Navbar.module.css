@@ -68,6 +68,8 @@
 /* Arrow for dropdowns */
 .arrow {
   transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  margin-right: 11rem;
 }
 
 .arrowUp {
@@ -88,7 +90,7 @@
 }
 
 .submenuItem {
-  padding-left: 15px;
+  padding-left: 30px;
   padding-bottom: 30px;
   padding-top: 25px;
 }
