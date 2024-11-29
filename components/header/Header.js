@@ -1,14 +1,12 @@
-// components/header/Header.js
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "./Header.module.css";
 import Navbar from "./navbar/Navbar";
-import Logo from "./logo/Logo";
-import Button from "./button/Button";
-import BurgerMenu from "./burger-menu/BurgerMenu";
 
-const Header = () => {
+export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
   const [isHeaderVisible, setHeaderVisible] = useState(true);
@@ -21,6 +19,7 @@ const Header = () => {
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
 
+    // Hide the header when scrolling down unless at the top
     if (currentScrollY > lastScrollY && currentScrollY > 0) {
       setHeaderVisible(false);
     } else {
@@ -28,8 +27,10 @@ const Header = () => {
     }
 
     setLastScrollY(currentScrollY);
+
+    // Set isScrolled based on scroll position
     setScrolled(currentScrollY > 0);
-  }, [lastScrollY]);
+  }, [lastScrollY]); // Include lastScrollY in dependencies
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +38,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll]);
+  }, [handleScroll]); // Add handleScroll as a dependency
 
   return (
     <header
@@ -47,26 +48,54 @@ const Header = () => {
     >
       <div className={styles.wrapper}>
         {/* Logo */}
-        <Logo />
+        <div className={styles.branding}>
+          <Link href="/" passHref>
+            <Image
+              src="/assets/logos/angelica-uniforms.svg"
+              className={styles.logoImage}
+              width={100}
+              height={80}
+              alt="Angelica Uniforms Logo"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
+              quality={100}
+              unoptimized
+            />
+          </Link>
+        </div>
+
         {/* Fullscreen Navbar */}
-        <div
+        <nav
           className={`${styles.navbarMenu} ${
             isMenuOpen ? styles.active : styles.exit
           }`}
         >
-          <Navbar
-            isMenuOpen={isMenuOpen}
-            onCloseMenu={() => setMenuOpen(false)}
-          />
-        </div>
+          <ul className={styles.list}>
+            <Navbar
+              isMenuOpen={isMenuOpen}
+              onCloseMenu={() => setMenuOpen(false)}
+            />
+          </ul>
+        </nav>
         {/* Free Quote Button */}
-        <Button />
+        <Link href="/get-quote">
+          <button
+            className={styles.quoteButton}
+            aria-label="Request a free quote"
+          >
+            Get a free Quote
+          </button>
+        </Link>
         {/* Burger Menu */}
-        <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} className={styles.bMenu} />
-        {/* Use BurgerMenu */}
+        <div
+          className={`${styles.burgerMenu} ${isMenuOpen ? styles.active : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span> {/* Burger icon */}
+        </div>
       </div>
     </header>
   );
-};
-
-export default Header;
+}

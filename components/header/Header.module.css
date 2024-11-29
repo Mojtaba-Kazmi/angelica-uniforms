@@ -3,23 +3,25 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 100%; /* Avoid anything going outside of the screen */
-  z-index: 20;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
+  z-index: 20; 
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
 }
 
 .scrolled {
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-  transition: background-color 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding-top: 1rem; /* Add padding to ensure content fits well */
+  background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(5px); 
+  transition: background-color 0.3s; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
-
 
 .hidden {
   display: none; /* Hide the header when scrolling down */
+}
+
+.scrolled .logoImage {
+  width: 150px; 
+  height: auto; 
 }
 
 .wrapper {
@@ -27,11 +29,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   background-color: transparent;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  box-sizing: border-box; /* Ensures padding is included in width */
-  width: 100%; /* Ensure the wrapper doesn't overflow */
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logoImage {
+  width: 160px; 
+  height: auto; 
+  padding: 2rem;
 }
 
 /* Full screen menu */
@@ -46,50 +57,162 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: top 1s ease;
+  transition: top 1s ease; 
   z-index: 1000;
 }
 
 .navbarMenu.active {
-  top: 0;
+  top: 0; 
 }
 
 .navbarMenu.exit {
-  top: -100vh;
+  top: -100vh; 
 }
 
-/* Move Media Query for Larger Screens to the End */
+/* Burger Menu Styles */
+.burgerMenu {
+  position: absolute; 
+  top: 50%; 
+  right: 1.5rem; 
+  transform: translateY(-50%); 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e40978; 
+  cursor: pointer;
+  z-index: 1100; 
+}
+
+.burgerMenu:hover {
+  background-color: #e40978; 
+}
+
+.burgerMenu span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.burgerMenu span,
+.burgerMenu span::before,
+.burgerMenu span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px; 
+  height: 2px;
+  background-color: #fff; 
+  transition: all 0.4s ease; 
+  right: 0; 
+}
+
+.burgerMenu.active span {
+  background-color: transparent; 
+}
+
+.burgerMenu span::before {
+  width: 20px; 
+  top: -8px; 
+  right: 0; 
+}
+
+.burgerMenu span::after {
+  width: 15px; 
+  bottom: -8px; 
+  right: 0; 
+}
+
+.burgerMenu:hover span,
+.burgerMenu:hover span::before,
+.burgerMenu:hover span::after {
+  width: 25px; 
+}
+
+.burgerMenu.active span::before,
+.burgerMenu.active span::after {
+  width: 25px; 
+  background-color: #fff; 
+  right: 0; 
+}
+
+.burgerMenu.active span::before {
+  transform: rotate(45deg); 
+  top: 0; 
+}
+
+.burgerMenu.active span::after {
+  transform: rotate(-45deg); 
+  bottom: 0; 
+}
+
+.quoteButton {
+  display: none;
+}
+
+.quoteButton:hover {
+  background-color: #e40978; 
+}
+
+/* Larger screens */
 @media (min-width: 1025px) {
   .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+    max-width: 1200px; 
     margin: 0 auto;
-    max-width: 1200px; /* or 1400px depending on your preference */
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+
+  .branding {
+    flex: 0 1 auto; 
+    margin-bottom: 0; 
+  }
+
+  .logoImage {
+    width: 150px; 
+    height: auto; 
   }
 
   .navbarMenu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    background-color: transparent;
-    position: static;
-    top: auto;
-    left: auto;
-    width: auto;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    padding: 0; 
+    background-color: transparent; 
+    position: static; 
+    top: auto; 
+    left: auto; 
+    width: auto; 
     height: auto;
-    border: none;
+    border: none; 
   }
 
-}
+  .quoteButton {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #e40978; 
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none; 
+    text-align: center;
+    flex: 0 1 auto; 
+    width: auto; 
+    margin-top: 0; 
+  }
 
-@media (max-width: 768px) {
-  .wrapper {
-    flex-direction: column;
-    align-items: flex-start; /* Stack logo and menu */
-   
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px); 
+    transition: background-color 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 10vh;
   }
 }

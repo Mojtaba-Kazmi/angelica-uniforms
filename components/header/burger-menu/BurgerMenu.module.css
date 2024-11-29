@@ -11,8 +11,9 @@
   border-radius: 50%;
   background-color: #e4087e;
   cursor: pointer;
-  z-index: 1400;
+  z-index: 1100;
   transform: translateY(-50%);
+  touch-action: manipulation;
 }
 
 .burgerMenu:hover {
