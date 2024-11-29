@@ -13,7 +13,7 @@ In any workplace where employees spend long hours standing, fatigue is a common 
 
 ### What Are Anti-Fatigue Mats?
 
-**Anti-fatigue mats** are specially designed floor mats that provide cushioning and support, helping to reduce the strain on the legs, feet, and back caused by standing for prolonged periods. These mats are typically made from materials like rubber or foam, which help to absorb shock and reduce pressure.
+**Anti-fatigue mats** are specially designed floor mats that provide cushioning and support, helping to reduce the strain on the legs, feet, and back caused by standing for prolonged periods. These mats are typically made from materials such as rubber or foam, which help to absorb shock and reduce pressure.
 
 ### How Anti-Fatigue Mats Boost Productivity
 
@@ -21,7 +21,7 @@ In any workplace where employees spend long hours standing, fatigue is a common 
 Standing on hard surfaces for hours can cause fatigue and discomfort, which in turn leads to a drop in energy and focus. Anti-fatigue mats encourage subtle movements in the leg muscles, improving blood flow and reducing fatigue.
 
 #### 2. **Improved Comfort**
-Comfortable employees are more likely to stay focused and perform their tasks efficiently. Anti-fatigue mats provide a cushioned surface that minimizes stress on the joints and muscles, helping employees feel at ease throughout their shifts.
+Comfortable employees are more likely to stay focused and perform their tasks efficiently. Anti-fatigue mats provide a cushioned surface that minimises stress on the joints and muscles, helping employees feel at ease throughout their shifts.
 
 #### 3. **Lower Risk of Health Issues**
 Prolonged standing can lead to health problems such as varicose veins, lower back pain, and joint stiffness. By reducing the physical strain on the body, anti-fatigue mats help to prevent these issues, leading to fewer sick days and higher workplace productivity.
@@ -30,7 +30,7 @@ Prolonged standing can lead to health problems such as varicose veins, lower bac
 Anti-fatigue mats often come with slip-resistant surfaces, making them a safer option for wet or oily environments. This not only protects employees from accidents but also keeps them focused on their work.
 
 #### 5. **Boosted Morale**
-When employees feel that their comfort and well-being are prioritized, it can significantly boost morale. Happier employees are more likely to be productive and committed to their roles.
+When employees feel that their comfort and well-being are prioritised, it can significantly boost morale. Happier employees are more likely to be productive and committed to their roles.
 
 ### Ideal Industries for Anti-Fatigue Mats
 

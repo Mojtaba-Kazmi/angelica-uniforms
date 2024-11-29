@@ -19,7 +19,7 @@ In-house laundry can be a time-consuming task, particularly when dealing with la
 
 ### 2. **Cost Efficiency: Save on Operational Costs**
 
-Professional laundry services may seem like an additional expense, but in reality, they can help businesses save money in the long term. When you handle laundry in-house, you incur costs related to equipment, energy, detergent, labor, and maintenance. These costs can add up quickly.
+Professional laundry services may seem like an additional expense, but in reality, they can help businesses save money in the long term. When you handle laundry in-house, you incur costs related to equipment, energy, detergent, labour, and maintenance. These costs can add up quickly.
 
 By outsourcing laundry to **Angelica Uniforms**, businesses can significantly reduce operational costs. You no longer need to invest in expensive washing machines, dryers, or detergents. Plus, professional laundry services are often more efficient at cleaning large volumes of items, which can help further reduce overall expenses.
 
@@ -31,7 +31,7 @@ With consistent and high-quality results, you can ensure that your employees alw
 
 ### 4. **Extend the Life of Your Linen and Uniforms**
 
-Frequent washing, especially with improper equipment or techniques, can damage fabric, causing wear and tear over time. Professional laundry services are equipped to handle various fabric types with the appropriate care. Whether you need durable workwear or delicate materials cleaned with extra care, **Angelica Uniforms** provides specialized services to ensure that your uniforms and linens last longer, saving you money on replacements.
+Frequent washing, especially with improper equipment or techniques, can damage fabric, causing wear and tear over time. Professional laundry services are equipped to handle various fabric types with the appropriate care. Whether you need durable workwear or delicate materials cleaned with extra care, **Angelica Uniforms** provides specialised services to ensure that your uniforms and linens last longer, saving you money on replacements.
 
 ### 5. **Sustainability: Eco-Friendly Cleaning Solutions**
 

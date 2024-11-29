@@ -1,6 +1,6 @@
 .burgerMenu {
-  position: fixed;
-  top: 12%;
+  position: absolute;
+  top: 50%;
   right: 1.5rem;
   width: 15vw; /* Width based on viewport width */
   height: 15vw; /* Height based on viewport width */
@@ -12,6 +12,7 @@
   background-color: #e4087e;
   cursor: pointer;
   z-index: 1400;
+  transform: translateY(-50%);
 }
 
 .burgerMenu:hover {
